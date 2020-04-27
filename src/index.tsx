@@ -4,7 +4,7 @@ import {Provider} from 'react-redux'
 import './index.css'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
-import {applyMiddleware, compose, createStore} from "redux"
+import {applyMiddleware, createStore} from "redux"
 import mainReducer from "./store/mainReducer"
 import thunk from 'redux-thunk'
 
@@ -23,11 +23,10 @@ const store = createStore(mainReducer, applyMiddleware(thunk))
 
 
 ReactDOM.render(
-    <React.StrictMode>
-        <Provider store={store}>
-            <App/>
-        </Provider>
-    </React.StrictMode>,
+    <Provider store={store}>
+        <App/>
+    </Provider>
+    ,
     document.getElementById('root')
 )
 

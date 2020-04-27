@@ -1,6 +1,6 @@
 import * as React from 'react'
 import {Button, Dialog, DialogActions, DialogContent, DialogTitle} from '@material-ui/core'
-import {FooterButton, FooterContainer} from '../../styles/BannerStyledComponents'
+import {FooterButton, FooterContainer} from './BannerStyledComponents'
 
 const Footer = () => {
     const [open, setOpen] = React.useState(false)

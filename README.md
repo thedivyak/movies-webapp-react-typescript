@@ -7,20 +7,18 @@ Start WebApp with `npm start`
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Keep the API server running as well for the movie dataset
-
-
+Keep the API server running as well for the movie dataset. From inside the server directory, run `npm start`
 
 
 ## Notes
 Designed and Developed by Divya Prem thedivyak@gmail.com
 
-#### Design Mock Ups: Whimsical
-- https://whimsical.com/6a2a6Zh4QsqsSAoM2upFsF#VsSo8s35WwFaP9w8qkPoUw
-- I used simple wire frames to visualize the data and structured the app around 3 main pages: Search, Movie, and Crew. The mock ups were helpful to get a general layout, and as I starting developing, I enhanced my initial design with more features and components.
+API & data provided by IT.com
+
+#### Design Mock Ups: Figma
+- I used simple wire frames to visualize the data and structured the app around 3 main pages: Search, Movie, and Crew. 
 
 #### UI Library: React with Typescript
-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 - I've spent the past year building full-stack React/Typescript/Kotlin webapps. React is known for helping build complex UIs based off of simple components and the content of this dataset had similar, repetitive information (name, title, genre, rating etc.) from each of the 3 API calls, so it aligned well with the concept of reusable components. This also helped me keep the code as well as the UI organized and intuitive. Typescript provides easier code readability and helps with self-documenting the codebase.
 
 #### State Management: Redux Store

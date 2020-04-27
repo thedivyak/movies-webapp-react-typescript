@@ -2,7 +2,7 @@ import * as React from "react"
 import {connect} from "react-redux";
 import * as actionCreators from "../../store/actions/globalActions";
 import {ErrorMessage, Page, PageTitle,} from "../../styles/SharedStyledComponents"
-import {Detail, Genres, MovieDetails, MovieOverviewContainer,} from "../../styles/MovieStyledComponents";
+import {Detail, Genres, MovieDetails, MovieOverviewContainer,} from "./MovieStyledComponents";
 import {Divider} from "@material-ui/core";
 import {Runtime} from "../SharedComponents/Runtime";
 import {MovieRating} from "../SharedComponents/Ratings";
@@ -38,6 +38,9 @@ class Movie extends React.Component<IMovieProps> {
     render() {
         if (this.props.apiError) {
             return <ErrorMessage>{this.props.errorMessage}</ErrorMessage>
+        }
+        if (this.props.title === "") {
+            return <></>
         }
 
         return (

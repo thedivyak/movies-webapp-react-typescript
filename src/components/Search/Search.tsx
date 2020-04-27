@@ -4,7 +4,7 @@ import {connect} from "react-redux"
 
 import * as actionCreators from "../../store/actions/globalActions"
 import {ErrorMessage, Page, PageTitle,} from "../../styles/SharedStyledComponents"
-import {SearchBar, SearchBarContainer, SearchResults} from "../../styles/SearchStyledComponents"
+import {SearchBar, SearchBarContainer, SearchResults} from "./SearchStyledComponents"
 import {Search as SearchIcon} from "@material-ui/icons"
 import ResultsTable from "../SharedComponents/ResultsTable"
 import {TablePagination} from "@material-ui/core"
@@ -56,7 +56,7 @@ class Search extends Component<SearchProps, SearchState> {
                     <SearchBar
                         variant="outlined"
                         type="search"
-                        label="Search by Title, Genre, Director, or Writer"
+                        label="Search by Title, Genre, or Crew"
                         onChange={e => {
                             this.setState(({searchTerm: e.target.value}))
                             this.props.search_movies(e.target.value)
