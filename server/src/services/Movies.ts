@@ -15,7 +15,7 @@ export const filterMovies = (offset = 0, size = 10, query = '', sort = 'rating',
 
   // page results returned through the API
   // this kind of thing would normally be handled within a database, but we're simulating a db with this code
-  const limit = offset + 10;
+  const limit = offset + size;
   const moviesPage = movies.slice(offset, limit);
 
   // take end after slice to include the time it takes to grab the page, may be worth splitting this out to a different value
