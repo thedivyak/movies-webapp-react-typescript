@@ -7,7 +7,7 @@ Start WebApp with `npm start`
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Keep the API server running as well for the movie dataset. From inside the server directory, run `npm start`
+Keep the API server running as well for the movie dataset. From inside the server directory, run `npm i` to install dependencies and then run `npm run start`
 
 
 ## Notes
